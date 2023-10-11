@@ -1,22 +1,7 @@
-"use client"
-
-import Image from 'next/image';
-import { TypeAnimation } from 'react-type-animation';
-
-export default function Home() {
-  const work = ['Frontend Development', 2000, 'Backend Development', 2000, 'Android Development', 2000, 'Web Designing', 2000, 'UI/UX Designing', 2000]
-
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl -mt-12 w-full items-center justify-center font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing src/app/page.tsx
-        </p>
-      </div>
-
+        <div name='Home' className='pt-8 h-full min-h-screen w-full flex items-center bg-gradient-to-b from-black via-black to-gray-800 '>
             <div className='section gap-16 md:gap-1 md:justify-between items-center md:flex-row-reverse'>
                 <div className='flex flex-col justify-center md:w-2/5 max-w-[320px]'>
-                    <Image src="/next.svg" alt="Next.js Logo" width={180} height={37} priority className='mx-auto' />
+                    <img src={Avatar} alt="" width="auto" height="auto" loading='eager' title='Avatar' className='rounded-full mx-auto w-full ' />
                 </div>
                 <div className='pl-2 xs:pl-8 flex flex-col gap-3 justify-center text-gray-200 w-max md:w-3/5'>
                     <h1 className='text-5xl xs:text-6xl lg:text-7xl font-bold '>
@@ -36,9 +21,16 @@ export default function Home() {
                             />
                         </span>
                     </p>
-                </div>
-            </div>
 
-    </main>
-  )
-}
+                    <div className='py-5'>
+                        <Link to="About" smooth duration={500} className='z-30 group bg-gradient-to-br from-cyan-400 to-blue-600 flex items-center justify-center gap-3 px-6 py-3  rounded-lg ease-linear duration-300 delay-75 transition-all cursor-pointer w-40 relative '>
+                            <span className='pr-6 sm:pr-0 sm:group-hover:-translate-x-5 sm:transition-transform delay-[400ms] ease-out'>About Me</span>
+                            <span className="absolute z-30 right-5 sm:-translate-y-7 sm:group-hover:translate-y-0 sm:scale-0 transition-all group-hover:scale-125 ease-in delay-200 animate-pulse duration-500 ">
+                                <ArrowDown />
+                            </span>
+                        </Link>
+                    </div>
+                </div>
+
+            </div>
+        </div>
