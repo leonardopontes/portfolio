@@ -2,7 +2,7 @@ import Image from 'next/image'
 import { TypeAnimation } from 'react-type-animation';
 
 export default function Home() {
-  const work = ['Frontend Development', 2000, 'Backend Development', 2000, 'Android Development', 2000, 'Web Designing', 2000, 'UI/UX Designing', 2000]
+  const work = ['Frontend Engineer', 2000, 'Backend Engineer', 2000]
   
   return (
     <main className="flex min-h-screen flex-col justify-between p-24">
@@ -21,9 +21,7 @@ export default function Home() {
           className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
           src="/next.svg"
           alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+          width={180} height={37} priority
         />
       </div>
 
