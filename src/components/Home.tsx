@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Home = () => {
+
   return (
     <div className="w-11/12 mx-auto flex justify-center -mt-36 ms:-mt-10 py-20">
       <div className="text-white py-20">

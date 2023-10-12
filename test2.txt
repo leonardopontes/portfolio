@@ -22,15 +22,6 @@
                         </span>
                     </p>
 
-                    <div className='py-5'>
-                        <Link to="About" smooth duration={500} className='z-30 group bg-gradient-to-br from-cyan-400 to-blue-600 flex items-center justify-center gap-3 px-6 py-3  rounded-lg ease-linear duration-300 delay-75 transition-all cursor-pointer w-40 relative '>
-                            <span className='pr-6 sm:pr-0 sm:group-hover:-translate-x-5 sm:transition-transform delay-[400ms] ease-out'>About Me</span>
-                            <span className="absolute z-30 right-5 sm:-translate-y-7 sm:group-hover:translate-y-0 sm:scale-0 transition-all group-hover:scale-125 ease-in delay-200 animate-pulse duration-500 ">
-                                <ArrowDown />
-                            </span>
-                        </Link>
-                    </div>
                 </div>
-
             </div>
         </div>
